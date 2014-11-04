@@ -21,7 +21,7 @@ Requires:       kyotocabinet
 BuildRequires:  kernel-devel >= 2.6.17
 BuildRequires:  kernel >= 2.6.17
 BuildRequires:  kyotocabinet-devel
-BuildRequires:  pkgconfig, zlib-devel, autoconf, automake
+BuildRequires:  gcc-c++, pkgconfig, zlib-devel, autoconf, automake
 
 %description
 Kyoto Tycoon is a lightweight database server with auto expiration mechanism,
@@ -126,6 +126,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Tue Nov 04 2014 Takashi Masuda <masutaka@feedforce.jp>
+- Add gcc-c++ to BuildRequires
+
 * Fri Jun 15 2012 Keisuke Kawahara <kyohsuke@conafie.jp>
 - bump up  0.9.56.
 
