@@ -111,7 +111,7 @@ rm -rf %{buildroot}
 %config(noreplace) %{_initrddir}/ktservctl
 /usr/libexec/ktplugdbvoid.so
 /usr/libexec/ktplugservmemc.so
-#%doc COPYING ChangeLog README
+%doc /usr/share/doc/kyototycoon/*
 %{_bindir}/kt*
 %{_libdir}/libkyototycoon.so.*
 %{_mandir}/man1/kt*.gz
