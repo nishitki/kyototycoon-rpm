@@ -72,7 +72,7 @@ rm -rf %{buildroot}%{_libdir}/lib%{name}.a
 # ktservctl	This shell script takes care of starting and stopping
 #		    the KyotoTycoon subsystem (ktserver).
 #
-# chkconfig: - 64 36
+# chkconfig: 345 98 20
 # description: KyotoTycoon: A persistent cache server
 # processname: ktserver
 # pidfile: /var/ktserver/pid
