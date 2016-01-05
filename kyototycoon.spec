@@ -11,7 +11,7 @@
 Summary:        A persistent cache server
 Name:           kyototycoon
 Version:        0.9.56
-Release:        1
+Release:        2%{?dist}
 License:        GPL/LGPL
 Group:          Development/Libraries
 URL:            http://fallabs.com/kyototycoon/
@@ -133,7 +133,7 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Jan 05 2015 nishitki <nishitki@outlook.com> 
-- Add Patch0 to fix build error on CentOS7
+- Add Patch1 to fix build error on CentOS7
 
 * Tue Nov 04 2014 Takashi Masuda <masutaka@feedforce.jp>
 - Add gcc-c++ to BuildRequires
