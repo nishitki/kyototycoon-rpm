@@ -16,6 +16,10 @@ License:        GPL/LGPL
 Group:          Development/Libraries
 URL:            http://fallabs.com/kyototycoon/
 Source:         http://fallabs.com/kyototycoon/pkg/%{name}-%{version}.tar.gz
+
+# fix a build error on CentOS7
+Patch1:		0001-kyototycoon-0.9.56-centos7.patch
+
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires:       kyotocabinet
 BuildRequires:  kernel-devel >= 2.6.17
@@ -45,6 +49,8 @@ developing with %{name}.
 
 %prep
 %setup -q
+
+%patch1 -p0
 
 %build
 autoconf
@@ -126,6 +132,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Tue Jan 05 2015 nishitki <nishitki@outlook.com> 
+- Add Patch0 to fix build error on CentOS7
+
 * Tue Nov 04 2014 Takashi Masuda <masutaka@feedforce.jp>
 - Add gcc-c++ to BuildRequires
 

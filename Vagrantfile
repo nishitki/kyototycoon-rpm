@@ -5,6 +5,6 @@
 VAGRANTFILE_API_VERSION = '2'
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = 'chef/centos-6.5'
+  config.vm.box = 'centos7'
   config.cache.scope = :box if Vagrant.has_plugin? 'vagrant-cachier'
 end
