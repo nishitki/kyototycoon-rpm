@@ -132,7 +132,7 @@ rm -rf %{buildroot}
 
 
 %changelog
-* Tue Jan 05 2015 nishitki <nishitki@outlook.com> 
+* Tue Jan 05 2016 nishitki <nishitki@outlook.com> 
 - Add Patch1 to fix build error on CentOS7
 
 * Tue Nov 04 2014 Takashi Masuda <masutaka@feedforce.jp>
